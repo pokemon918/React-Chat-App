@@ -1,12 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=0.96, maximum-scale=3.0, minimum-scale=0.96">
     <title>Chat App</title>
     <link rel="icon" href="./img/favicon.png">
     <link rel="stylesheet" href="./css/styles.min.css">
 </head>
 <body>
-
     <div class="chat">
         <div id="sidebar" class="chat__sidebar">
 
@@ -16,7 +17,7 @@
 
             <div class="compose">
                 <form id="message-form">
-                    <input name="message" placeholder="Message" required autocomplete="off">
+                    <input name="message" placeholder="Message" required autocomplete="off" autofocus>
                     <button>Send</button>
                 </form>
                 <button id="send-location">Send location</button> 
