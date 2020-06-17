@@ -115,7 +115,12 @@ button:disabled {
 /* Message Styles */
 
 .message {
-    margin-bottom: 16px;   
+    margin-bottom: 16px;
+    background: #eee; 
+    padding: 10px 22px;
+    border: 1px #eee solid;
+    border-radius: 10px;
+    width: 100%;   
 }
 
 .message__name {
@@ -131,6 +136,13 @@ button:disabled {
 
 .message a {
     color: #0070CC;
+}
+
+@media screen and (max-width: 500px) {
+    .message:last-child {
+        width: 90vw;
+        overflow-wrap: break-word;
+    }
 }
 
 /* Message Composition Styles */
@@ -149,7 +161,8 @@ button:disabled {
 }
 
 .compose input {
-    border: 1px solid #eeeeee;
+    border: 1px solid #ccc;
+    border-radius: 20px;
     width: 100%;
     padding: 12px;
     margin: 0 16px 0 0;
